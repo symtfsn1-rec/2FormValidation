@@ -8,7 +8,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  hello world
+  <div class="form-container">
+        <h1>お問い合わせ</h1>
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="username">お名前 (3文字以上)</label>
+                <input type="text" id="username" placeholder="例: 山田太郎">
+                <span id="nameError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" placeholder="example@test.com">
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>送信する</button>
+        </form>
+    </div>
+
   <script src="script.js"></script>
 </body>
 </html>
